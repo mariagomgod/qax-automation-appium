@@ -1,0 +1,11 @@
+{
+  "capabilities": {
+    "alwaysMatch": {
+      "platformName": "Android",
+      "appium:automationName": "UiAutomator2",
+      "appium:deviceName": "Pixel_9_Pro",
+      "appium:app": "/Users/Maria/Desktop/ApiDemos-debug.apk"
+    },
+    "firstMatch": [{}]
+  }
+}

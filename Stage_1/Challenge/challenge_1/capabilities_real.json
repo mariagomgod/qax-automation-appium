@@ -1,0 +1,13 @@
+{
+  "capabilities": {
+    "alwaysMatch": {
+      "platformName": "Android",
+      "appium:automationName": "UiAutomator2",
+      "appium:deviceName": "HONOR X7b",
+      "appium:udid": "R58M123ABC",
+      "appium:app": "/Users/Maria/Desktop/ApiDemos-debug.apk",
+      "appium:noReset": false
+    },
+    "firstMatch": [{}]
+  }
+}
