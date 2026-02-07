@@ -17,5 +17,5 @@ se abre correctamente en ambos dispositivos.
 - Compartir en un JSON las capabilities usadas para cada dispositivo (emulador y real).
 - Subir el archivo JSON a tu repositorio de entregas.
 
-## ⚠️ Advertencia: 
+## ⚠️ Nota QA Automation: 
 El archivo "capabilities_real.json" es solo ilustrativo. No se pueden ejecutar pruebas en un dispositivo real debido a la incompatibilidad de Vysor con la versión de Android de mi dispositivo.  

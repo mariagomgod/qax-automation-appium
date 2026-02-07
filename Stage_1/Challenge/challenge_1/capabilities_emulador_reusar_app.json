@@ -4,7 +4,9 @@
       "platformName": "Android",
       "automationName": "UiAutomator2",
       "deviceName": "Pixel_9_Pro",
-      "app": "/Users/Maria/Desktop/mda-2.2.0-25.apk"
+      "appPackage": "com.saucelabs.mydemoapp.android",
+      "appActivity": ".view.activities.SplashActivity",
+      "noReset": "true"
     },
     "firstMatch": [{}]
   }
