@@ -1,5 +1,6 @@
 package base;
 
+import config.CapabilitiesConfig;
 import io.appium.java_client.AppiumDriver;
 import org.junit.After;
 import org.junit.Before;
@@ -13,14 +14,15 @@ public class BaseTest {
 
     @Before
     public void setUp() throws Exception {
+        DesiredCapabilities desiredCapabilities = CapabilitiesConfig.getCapabilities();
+        customize(desiredCapabilities);
         driver = new AppiumDriver(
                 new URL("http://localhost:4723/wd/hub"),
-                getCapabilities()
+                desiredCapabilities
         );
     }
 
-    protected DesiredCapabilities getCapabilities() {
-        throw new UnsupportedOperationException("No implementado!");
+    protected void customize(DesiredCapabilities desiredCapabilities) {
     }
 
     @After
