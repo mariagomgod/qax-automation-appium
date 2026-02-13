@@ -16,7 +16,7 @@ public class AndroidAppiumDemoTest extends BaseTest {
     }
 
     @Test
-    public void OpenAndroidAppiumDemoTest() throws Exception {
+    public void openAndroidAppiumDemoTest() {
 
         AndroidAppiumDemoPage appiumDemoPage = new AndroidAppiumDemoPage(driver);
 
