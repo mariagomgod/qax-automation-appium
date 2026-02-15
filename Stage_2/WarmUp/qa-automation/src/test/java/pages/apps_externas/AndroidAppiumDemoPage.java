@@ -23,19 +23,16 @@ public class AndroidAppiumDemoPage extends BasePage {
 
     // 🎬 Acciones
     public void enterSomeValue() {
-        driver.findElement(enterSomeValueBtnLocator).click();
-
-        WebElement someValueInput = wait.until(visibilityOfElementLocated(someValueInputLocator));
-        someValueInput.sendKeys("Hola Mundo");
-
-        driver.findElement(submitBtnLocator).click();
+        wait.until(visibilityOfElementLocated(enterSomeValueBtnLocator)).click();
+        wait.until(visibilityOfElementLocated(someValueInputLocator)).sendKeys("Hola Mundo");
+        wait.until(visibilityOfElementLocated(submitBtnLocator)).click();
     }
 
     public void navigateUp() {
-        driver.findElement(navigateUpLocator).click();
+        wait.until(visibilityOfElementLocated(navigateUpLocator)).click();
     }
 
     public String getTxt() {
-        return driver.findElement(txtValueLocator).getText();
+        return wait.until(visibilityOfElementLocated(txtValueLocator)).getText();
     }
 }
