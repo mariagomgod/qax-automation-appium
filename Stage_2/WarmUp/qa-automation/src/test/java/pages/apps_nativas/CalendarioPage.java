@@ -1,12 +1,19 @@
 package pages.apps_nativas;
 
+import org.openqa.selenium.WebDriver;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import pages.BasePage;
 
 import java.net.URL;
 
-public class CalendarioPage {
+public class CalendarioPage extends BasePage {
+
+    public CalendarioPage(AppiumDriver driver) {
+        super(driver);
+    }
 
     public static void main(String[] args) {
         try {

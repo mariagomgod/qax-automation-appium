@@ -16,7 +16,8 @@ public class CamaraPage {
                     .setPlatformName("Android")
                     .setAutomationName("UiAutomator2")
                     .setAppPackage("com.android.camera2")
-                    .setAppActivity("com.android.camera.CameraLauncher");
+                    .setAppActivity("com.android.camera.CameraLauncher")
+                    .setNoReset(true);
 
             URL appiumServerUrl = new URL("http://localhost:4723/wd/hub");
 

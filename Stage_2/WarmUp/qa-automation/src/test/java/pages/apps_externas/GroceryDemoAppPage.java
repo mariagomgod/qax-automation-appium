@@ -4,7 +4,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElem
 
 import org.openqa.selenium.By;
 
-import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
 public class GroceryDemoAppPage extends BasePage {
@@ -18,7 +18,7 @@ public class GroceryDemoAppPage extends BasePage {
     private final By navigateUpLocator = By.xpath("//android.widget.Button[@text='arrow back']");
 
 
-    public GroceryDemoAppPage(AppiumDriver driver) {
+    public GroceryDemoAppPage(WebDriver driver) {
         super(driver);
     }
 

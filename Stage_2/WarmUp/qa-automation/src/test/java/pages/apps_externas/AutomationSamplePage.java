@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
 public class AutomationSamplePage extends BasePage {
@@ -17,7 +17,7 @@ public class AutomationSamplePage extends BasePage {
     private final By loginBtnLocator = By.id("com.dgotlieb.automationsample:id/loginButton");
     private final By errorMsgLogin = By.id("com.dgotlieb.automationsample:id/errorTV");
 
-    public AutomationSamplePage(AppiumDriver driver) {
+    public AutomationSamplePage(WebDriver driver) {
         super(driver);
     }
 

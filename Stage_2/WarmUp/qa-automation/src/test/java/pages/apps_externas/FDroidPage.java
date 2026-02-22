@@ -4,7 +4,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElem
 
 import org.openqa.selenium.By;
 
-import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
 public class FDroidPage extends BasePage {
@@ -18,7 +18,7 @@ public class FDroidPage extends BasePage {
     private final By navigateUpLocator = By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']");
 
 
-    public FDroidPage(AppiumDriver driver) {
+    public FDroidPage(WebDriver driver) {
         super(driver);
     }
 

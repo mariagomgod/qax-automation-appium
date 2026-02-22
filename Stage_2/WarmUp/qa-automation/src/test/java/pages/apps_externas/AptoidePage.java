@@ -4,9 +4,9 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import io.appium.java_client.AppiumDriver;
 import pages.BasePage;
 
 public class AptoidePage extends BasePage {
@@ -23,7 +23,7 @@ public class AptoidePage extends BasePage {
     private final By homeTabLocator = By.id("cm.aptoide.pt:id/action_home");
 
 
-    public AptoidePage(AppiumDriver driver) {
+    public AptoidePage(WebDriver driver) {
         super(driver);
     }
 

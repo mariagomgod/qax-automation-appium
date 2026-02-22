@@ -2,11 +2,10 @@ package pages.apps_externas;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
-import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebDriver;
 import pages.BasePage;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 public class AndroidAppiumDemoPage extends BasePage {
 
@@ -17,7 +16,7 @@ public class AndroidAppiumDemoPage extends BasePage {
     private final By navigateUpLocator = By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']");
     private final By txtValueLocator = By.id("com.skill2lead.appiumdemo:id/Tv1");
 
-    public AndroidAppiumDemoPage(AppiumDriver driver) {
+    public AndroidAppiumDemoPage(WebDriver driver) {
         super(driver);
     }
 
