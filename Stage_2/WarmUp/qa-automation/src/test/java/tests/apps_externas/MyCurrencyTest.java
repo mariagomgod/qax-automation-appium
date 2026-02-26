@@ -2,7 +2,6 @@ package tests.apps_externas;
 
 import static io.appium.java_client.remote.MobileCapabilityType.APP;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 

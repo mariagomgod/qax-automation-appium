@@ -38,3 +38,6 @@ He seguido estos pasos para completar el ejercicio:
 - Localizadores de los elementos inspeccionados.
 - Métodos para interactuar con esos elementos (si aplica).
 - Comentarios que expliquen la función de cada elemento y método.
+
+### ⚙ ¿Cómo lanzamos los tests?
+- Vamos a la clase de test que queramos lanzar y le damos al play (Run 'Test X')
