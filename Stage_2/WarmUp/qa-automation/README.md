@@ -40,4 +40,21 @@ He seguido estos pasos para completar el ejercicio:
 - Comentarios que expliquen la función de cada elemento y método.
 
 ### ⚙ ¿Cómo lanzamos los tests?
-- Vamos a la clase de test que queramos lanzar y le damos al play (Run 'Test X')
+1. Pre-requisitos técnicos:
+   - Java Development Kit (JDK): Versión 8 o superior, con JAVA_HOME configurado.
+   - Node.js y NPM: Necesarios para instalar el servidor Appium.
+   - Appium Server (v2.x recomendado): Instalado vía npm install -g appium.
+   - Drivers de Appium: Instalar los drivers necesarios:
+     - Android: appium driver install uiautomator2.
+     - iOS: appium driver install xcuitest.
+   - Entorno de Desarrollo (IDE): IntelliJ IDEA o Eclipse.
+   - Android SDK/Studio: Para emuladores/dispositivos físicos. Configurar ANDROID_HOME.
+   - Xcode: Solo para automatización iOS (requiere Mac).
+   - Appium Inspector: Para localizar elementos.
+   - Maven: Para gestionar dependencias (Appium Java Client, TestNG/JUnit)
+   
+2. Lanzar un test de forma individualizada:
+   - Vamos a la clase de test que queramos lanzar y le damos al play (Run 'Test X')
+
+3. Lanzar la suite de tests completa:
+   - Desde el terminal del IDE con el comando 'mvn test'

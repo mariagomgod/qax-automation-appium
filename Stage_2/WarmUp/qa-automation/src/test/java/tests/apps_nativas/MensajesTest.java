@@ -19,5 +19,7 @@ public class MensajesTest extends BaseTest {
 
         MensajesPage mensajesPage = new MensajesPage(driver);
 
+        mensajesPage.enviarUnMensaje();
+
     }
 }
