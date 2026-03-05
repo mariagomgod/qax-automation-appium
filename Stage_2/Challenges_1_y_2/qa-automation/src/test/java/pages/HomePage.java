@@ -2,7 +2,7 @@ package pages;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
-import pages.accessibility.AccesibilityPage;
+import pages.accessibility.AccessibilityPage;
 import pages.animation.AnimationPage;
 import pages.app.AppPage;
 import pages.content.ContentPage;
@@ -44,9 +44,9 @@ public class HomePage extends BasePage {
         return new AppPage(driver);
     }
 
-    public AccesibilityPage goToAccessibility() {
+    public AccessibilityPage goToAccessibility() {
         driver.findElement(accessibilityOptionLocator).click();
-        return new AccesibilityPage(driver);
+        return new AccessibilityPage(driver);
     }
 
     public AnimationPage goToAnimation() {

@@ -3,7 +3,7 @@ package test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import pages.accessibility.AccesibilityPage;
+import pages.accessibility.AccessibilityPage;
 import pages.accessibility.AccessibilityNodeProviderPage;
 import pages.accessibility.AccessibilityNodeQueryingPage;
 import pages.accessibility.AccessibilityServicePage;
@@ -28,7 +28,7 @@ public class AccessibilityTests extends BaseTest {
         HomePage home = new HomePage(driver);
 
         // ==================== ACTIONS ====================
-        AccesibilityPage accesibilityPage = home.goToAccessibility();
+        AccessibilityPage accesibilityPage = home.goToAccessibility();
         Assert.assertTrue(accesibilityPage.isAccessibilityNodeProviderOptionDisplayed());
         Assert.assertTrue(accesibilityPage.isAccessibilityNodeQueryingOptionDisplayed());
         Assert.assertTrue(accesibilityPage.isAccessibilityServiceOptionDisplayed());

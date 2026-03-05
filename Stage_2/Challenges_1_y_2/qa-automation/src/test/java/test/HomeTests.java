@@ -2,7 +2,7 @@ package test;
 
 import org.junit.Test;
 
-import pages.accessibility.AccesibilityPage;
+import pages.accessibility.AccessibilityPage;
 import pages.animation.AnimationPage;
 import pages.app.AppPage;
 import pages.content.ContentPage;
@@ -23,7 +23,7 @@ public class HomeTests extends BaseTest {
         HomePage home = new HomePage(driver);
 
         // ==================== ACTIONS ====================
-        AccesibilityPage accesibilityPage = home.goToAccessibility();
+        AccessibilityPage accesibilityPage = home.goToAccessibility();
         accesibilityPage.goBack();
 
         AnimationPage animationPage = home.goToAnimation();

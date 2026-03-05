@@ -6,7 +6,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import pages.BasePage;
 
-public class AccesibilityPage extends BasePage {
+public class AccessibilityPage extends BasePage {
 
     // ==================== LOCATORS ====================
 
@@ -15,7 +15,7 @@ public class AccesibilityPage extends BasePage {
     private final By accessibilityServiceLocator = AppiumBy.accessibilityId("Accessibility Service");
     private final By customViewLocator = AppiumBy.accessibilityId("Custom View");
 
-    public AccesibilityPage(AndroidDriver driver) {
+    public AccessibilityPage(AndroidDriver driver) {
         super(driver);
     }
 
