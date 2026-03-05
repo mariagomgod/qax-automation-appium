@@ -13,7 +13,7 @@ En el proyecto trabajaremos con la aplicación Api Demos, en el cual vamos a loc
 
 ---
 ### ⚙ Casos de prueba a automatizar
-1. Abrir todos los menus del Home y validar qe tenga los submenús completos.
+1. Abrir todos los menus del Home y validar que tenga los submenús completos.
 2. Abrir todos los submenus de cada menu.
 3. Abrir el menu "Views", luego el submenu "Controls", luego el submenu "1. Light Theme",
    escribir texto en el campo de texto, seleccionar el checkbox y radio button, y finalmente validar que los elementos estén seleccionados.
@@ -44,7 +44,7 @@ En el proyecto trabajaremos con la aplicación Api Demos, en el cual vamos a loc
 
 ---
 
-### ⚙ ¿Cómo lanzamos los test?
+### ⚙ ¿Cómo lanzamos los tests?
 1. Pre-requisitos técnicos:
    - Java Development Kit (JDK): Versión 8 o superior, con JAVA_HOME configurado.
    - Node.js y NPM: Necesarios para instalar el servidor Appium.
