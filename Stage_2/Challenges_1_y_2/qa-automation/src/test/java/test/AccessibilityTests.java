@@ -28,20 +28,20 @@ public class AccessibilityTests extends BaseTest {
         HomePage home = new HomePage(driver);
 
         // ==================== ACTIONS ====================
-        AccessibilityPage accesibilityPage = home.goToAccessibility();
-        Assert.assertTrue(accesibilityPage.isAccessibilityNodeProviderOptionDisplayed());
-        Assert.assertTrue(accesibilityPage.isAccessibilityNodeQueryingOptionDisplayed());
-        Assert.assertTrue(accesibilityPage.isAccessibilityServiceOptionDisplayed());
-        Assert.assertTrue(accesibilityPage.isCustomViewOptionDisplayed());
-        AccessibilityNodeProviderPage accessibilityNodeProviderPage = accesibilityPage.goToAccessibilityNodeProvider();
+        AccessibilityPage accessibilityPage = home.goToAccessibility();
+        Assert.assertTrue(accessibilityPage.isAccessibilityNodeProviderOptionDisplayed());
+        Assert.assertTrue(accessibilityPage.isAccessibilityNodeQueryingOptionDisplayed());
+        Assert.assertTrue(accessibilityPage.isAccessibilityServiceOptionDisplayed());
+        Assert.assertTrue(accessibilityPage.isCustomViewOptionDisplayed());
+        AccessibilityNodeProviderPage accessibilityNodeProviderPage = accessibilityPage.goToAccessibilityNodeProvider();
         accessibilityNodeProviderPage.goBack();
-        AccessibilityNodeQueryingPage accessibilityNodeQueryingPage = accesibilityPage.goToAccessibilityNodeQuerying();
+        AccessibilityNodeQueryingPage accessibilityNodeQueryingPage = accessibilityPage.goToAccessibilityNodeQuerying();
         accessibilityNodeQueryingPage.goBack();
-        AccessibilityServicePage accessibilityServicePage = accesibilityPage.goToAccessibilityService();
+        AccessibilityServicePage accessibilityServicePage = accessibilityPage.goToAccessibilityService();
         accessibilityServicePage.goBack();
-        CustomViewPage customViewPage = accesibilityPage.goToCustomView();
+        CustomViewPage customViewPage = accessibilityPage.goToCustomView();
         customViewPage.goBack();
-        accesibilityPage.goBack();
+        accessibilityPage.goBack();
 
         AnimationPage animationPage = home.goToAnimation();
         animationPage.goBack();
