@@ -2,6 +2,18 @@ package pages;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import pages.accessibility.AccesibilityPage;
+import pages.animation.AnimationPage;
+import pages.app.AppPage;
+import pages.content.ContentPage;
+import pages.graphics.GraphicsPage;
+import pages.media.MediaPage;
+import pages.nfc.NFCPage;
+import pages.os.OSPage;
+import pages.preference.PreferencePage;
+import pages.text.TextPage;
+import pages.views.ViewsPage;
+
 import org.openqa.selenium.By;
 
 public class HomePage extends BasePage {

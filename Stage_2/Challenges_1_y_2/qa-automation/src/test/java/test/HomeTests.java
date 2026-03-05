@@ -2,18 +2,18 @@ package test;
 
 import org.junit.Test;
 
-import pages.AccesibilityPage;
-import pages.AnimationPage;
-import pages.AppPage;
-import pages.ContentPage;
-import pages.GraphicsPage;
+import pages.accessibility.AccesibilityPage;
+import pages.animation.AnimationPage;
+import pages.app.AppPage;
+import pages.content.ContentPage;
+import pages.graphics.GraphicsPage;
 import pages.HomePage;
-import pages.MediaPage;
-import pages.NFCPage;
-import pages.OSPage;
-import pages.PreferencePage;
-import pages.TextPage;
-import pages.ViewsPage;
+import pages.media.MediaPage;
+import pages.nfc.NFCPage;
+import pages.os.OSPage;
+import pages.preference.PreferencePage;
+import pages.text.TextPage;
+import pages.views.ViewsPage;
 
 public class HomeTests extends BaseTest {
 

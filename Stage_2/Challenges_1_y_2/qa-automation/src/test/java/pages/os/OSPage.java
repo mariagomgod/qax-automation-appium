@@ -1,12 +1,13 @@
-package pages;
+package pages.os;
 
 import io.appium.java_client.android.AndroidDriver;
+import pages.BasePage;
 
-public class PreferencePage extends BasePage {
+public class OSPage extends BasePage {
 
     // ==================== LOCATORS ====================
 
-    public PreferencePage(AndroidDriver driver) {
+    public OSPage(AndroidDriver driver) {
         super(driver);
     }
 

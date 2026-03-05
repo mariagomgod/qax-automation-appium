@@ -1,12 +1,13 @@
-package pages;
+package pages.text;
 
 import io.appium.java_client.android.AndroidDriver;
+import pages.BasePage;
 
-public class GraphicsPage extends BasePage {
+public class TextPage extends BasePage {
 
     // ==================== LOCATORS ====================
 
-    public GraphicsPage(AndroidDriver driver) {
+    public TextPage(AndroidDriver driver) {
         super(driver);
     }
 

@@ -1,6 +1,8 @@
-package pages;
+package pages.app;
 
 import io.appium.java_client.android.AndroidDriver;
+import pages.BasePage;
+
 import org.openqa.selenium.By;
 
 public class AppPage extends BasePage {

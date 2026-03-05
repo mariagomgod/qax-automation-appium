@@ -1,12 +1,13 @@
-package pages;
+package pages.nfc;
 
 import io.appium.java_client.android.AndroidDriver;
+import pages.BasePage;
 
-public class AnimationPage extends BasePage {
+public class NFCPage extends BasePage {
 
     // ==================== LOCATORS ====================
 
-    public AnimationPage(AndroidDriver driver) {
+    public NFCPage(AndroidDriver driver) {
         super(driver);
     }
 

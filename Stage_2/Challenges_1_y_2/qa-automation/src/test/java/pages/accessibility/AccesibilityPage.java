@@ -1,9 +1,10 @@
-package pages;
+package pages.accessibility;
 
 import org.openqa.selenium.By;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import pages.BasePage;
 
 public class AccesibilityPage extends BasePage {
 

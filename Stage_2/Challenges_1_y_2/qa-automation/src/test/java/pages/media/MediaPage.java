@@ -1,12 +1,13 @@
-package pages;
+package pages.media;
 
 import io.appium.java_client.android.AndroidDriver;
+import pages.BasePage;
 
-public class ViewsPage extends BasePage {
+public class MediaPage extends BasePage {
 
     // ==================== LOCATORS ====================
 
-    public ViewsPage(AndroidDriver driver) {
+    public MediaPage(AndroidDriver driver) {
         super(driver);
     }
 
