@@ -23,8 +23,9 @@ public class HomeTests extends BaseTest {
         HomePage home = new HomePage(driver);
 
         // ==================== ACTIONS ====================
-        AccessibilityPage accesibilityPage = home.goToAccessibility();
-        accesibilityPage.goBack();
+
+        AccessibilityPage accessibilityPage = home.goToAccessibility();
+        accessibilityPage.goBack();
 
         AnimationPage animationPage = home.goToAnimation();
         animationPage.goBack();
