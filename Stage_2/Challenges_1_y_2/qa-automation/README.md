@@ -7,20 +7,24 @@
 
 ---
 
-### 🧪 Api Demos (Android)
+### 📚 Api Demos (Android)
 
 En el proyecto trabajaremos con la aplicación Api Demos, en el cual vamos a localizar todos los elementos necesarios para completar un flujo básico dentro de la app.
 
 ---
-### ⚙ Casos de prueba a automatizar
+### 📖 Casos de prueba a automatizar
 1. Abrir todos los menus del Home y validar que tenga los submenús completos.
 2. Abrir todos los submenus de cada menu.
 3. Abrir el menu "Views", luego el submenu "Controls", luego el submenu "1. Light Theme",
    escribir texto en el campo de texto, seleccionar el checkbox y radio button, y finalmente validar que los elementos estén seleccionados.
 4. Abrir el menu "Views", luego el submenu "Date Widgets", luego el submenu "1. Dialog", Click en "change the date", seleccionar una fecha y validar que la fecha seleccionada sea la correcta.
 
+#### 📊 Notas QA: 
+- No se han podido automatizar por un problema de la aplicación en sí, ya que al acceder a los mismos, se cierra esta automáticamente:
+  - Los submenús BitmapDecode, BitmapPixels, CameraPreview, Clipping, SensorTest ni Typefaces dentro del menú "Graphics". 
+  - El submenú AudioFx dentro del menú "Media".
 ---
-### ⚙ Instrucciones
+### 🔧 Instrucciones
 
 1. Instalar la app `ApiDemos-debug.apk` en el emulador Android.
 2. Abrir Appium Inspector y conectarse al emulador Android.
@@ -35,7 +39,7 @@ En el proyecto trabajaremos con la aplicación Api Demos, en el cual vamos a loc
 
 ---
 
-### 🧪 ¿Cómo he estructurado el proyecto?
+### 📂 ¿Cómo he estructurado el proyecto?
 1. Creando una clase para cada aplicación inspeccionada, siguiendo el patrón Page Object Model (POM).
 2. Cada clase contiene:
 - Localizadores de los elementos inspeccionados.
@@ -44,7 +48,7 @@ En el proyecto trabajaremos con la aplicación Api Demos, en el cual vamos a loc
 
 ---
 
-### ⚙ ¿Cómo lanzamos los tests?
+### 🚀 ¿Cómo lanzamos los tests?
 1. Pre-requisitos técnicos:
    - Java Development Kit (JDK): Versión 8 o superior, con JAVA_HOME configurado.
    - Node.js y NPM: Necesarios para instalar el servidor Appium.
