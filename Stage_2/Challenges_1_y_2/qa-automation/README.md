@@ -23,6 +23,8 @@ En el proyecto trabajaremos con la aplicación Api Demos, en el cual vamos a loc
 - No se han podido automatizar por un problema de la aplicación en sí, ya que al acceder a los mismos, se cierra esta automáticamente:
   - Los submenús BitmapDecode, BitmapPixels, CameraPreview, Clipping, SensorTest ni Typefaces dentro del menú "Graphics". 
   - El submenú AudioFx dentro del menú "Media".
+  - El submenú Sensors dentro del menú "OS".
+- El submenú KeyEventText dentro del menú "Text" no regresa al menú, por lo que no se ha podido automatizar. Cada vez que clicas hacia atrás se queda introduciendo texto, aún pulsando el botón Clear.
 ---
 ### 🔧 Instrucciones
 
