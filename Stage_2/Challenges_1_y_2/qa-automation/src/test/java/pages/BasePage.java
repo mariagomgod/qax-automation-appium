@@ -48,6 +48,12 @@ public class BasePage {
             return false;
         }
     }
+
+    protected boolean isElementChecked(By locator) {
+        String checked = driver.findElement(locator).getAttribute("checked");
+        return Boolean.parseBoolean(checked);
+    }
+
     protected void clickElement(By locator) {
         waitForElementToBeClickable(locator).click();
     }
