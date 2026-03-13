@@ -32,7 +32,13 @@ public class BasePage {
     }
 
     protected WebElement waitForElementToBeClickable(By locator) {
-        scrollToElement(locator);
+        return waitForElementToBeClickable(locator, true);
+    }
+
+    protected WebElement waitForElementToBeClickable(By locator, boolean shouldScroll) {
+        if (shouldScroll) {
+            scrollToElement(locator);
+        }
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
@@ -54,8 +60,17 @@ public class BasePage {
         return Boolean.parseBoolean(checked);
     }
 
+    protected boolean isElementClickable(By locator) {
+        String clicked = driver.findElement(locator).getAttribute("clickable");
+        return Boolean.parseBoolean(clicked);
+    }
+
     protected void clickElement(By locator) {
         waitForElementToBeClickable(locator).click();
+    }
+
+    protected void clickElementOnModal(By locator) {
+        waitForElementToBeClickable(locator, false).click();
     }
 
     protected void enterText(By locator, String text) {

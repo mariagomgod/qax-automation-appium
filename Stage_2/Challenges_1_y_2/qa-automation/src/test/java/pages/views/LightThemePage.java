@@ -13,14 +13,15 @@ public class LightThemePage extends BasePage {
     private final By textInputLocator = AppiumBy.id("io.appium.android.apis:id/edit");
     private final By firstCheckboxLocator = AppiumBy.accessibilityId("Checkbox 1");
     private final By firstRadioButtonLocator = AppiumBy.accessibilityId("RadioButton 1");
+
     public LightThemePage(AndroidDriver driver) {
         super(driver);
     }
 
     // ==================== ACTIONS ====================
 
-    public void fillTextField() {
-        enterText(textInputLocator, "hola");
+    public void fillTextField(String text) {
+        enterText(textInputLocator, text);
     }
 
     public void selectFirstCheckbox() {

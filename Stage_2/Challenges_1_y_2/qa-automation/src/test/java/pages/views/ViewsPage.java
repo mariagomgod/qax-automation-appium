@@ -11,6 +11,7 @@ public class ViewsPage extends BasePage {
     // ==================== LOCATORS ====================
 
     private final By controlsLocator = AppiumBy.accessibilityId("Controls");
+    private final By dateWidgetsLocator = AppiumBy.accessibilityId("Date Widgets");
 
     public ViewsPage(AndroidDriver driver) {
         super(driver);
@@ -23,9 +24,18 @@ public class ViewsPage extends BasePage {
         return new ControlsPage(driver);
     }
 
+    public DateWidgetsPage goToDateWidgets() {
+        driver.findElement(dateWidgetsLocator).click();
+        return new DateWidgetsPage(driver);
+    }
+
     // ==================== ASSERTIONS ====================
 
     public boolean isControlsDisplayed() {
         return driver.findElement(controlsLocator).isDisplayed();
+    }
+
+    public boolean isDateWidgetsDisplayed() {
+        return driver.findElement(dateWidgetsLocator).isDisplayed();
     }
 }
