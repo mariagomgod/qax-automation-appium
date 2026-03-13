@@ -34,10 +34,10 @@ En el proyecto trabajaremos con la aplicación Api Demos, en el cual vamos a loc
 4. Documentar los localizadores usados para cada elemento (Accessibility ID, ID, XPath, Class Name, etc.)
 5. Agregar los localizadores del Home la clase `src/test/java/pages/HomePage.java`
 6. Crear las clases para cada uno de los menus y submenus, agregando los localizadores correspondientes.
-7. Agregar nuevas validaciones en la clase `src/test/java/test/HomeTests.java` para validar que cada menu del Home tenga los submenus completos. 9
-8. Crear un nuevo test en la clase `src/test/java/test/ViewTest.java` para automatizar el caso de prueba 2.
-9. Crear las clases necesarias en `src/test/java/pages/` para representar las pantallas involucradas en el caso de prueba 2, agregando los localizadores y métodos necesarios. 
-10. Crear un nuevo test en la clase `src/test/java/test/ViewTest.java` para automatizar el caso de prueba 3.
+7. Agregar nuevas validaciones en la clase `src/test/java/test/HomeTests.java` para validar que cada menu del Home tenga los submenus completos.
+8. Crear un nuevo test en la clase `src/test/java/test/ViewTests.java` para automatizar el caso de prueba 3.
+9. Crear las clases necesarias en `src/test/java/pages/` para representar las pantallas involucradas en el caso de prueba 3, agregando los localizadores y métodos necesarios. 
+10. Crear un nuevo test en la clase `src/test/java/test/ViewTests.java` para automatizar el caso de prueba 4.
 
 ---
 
