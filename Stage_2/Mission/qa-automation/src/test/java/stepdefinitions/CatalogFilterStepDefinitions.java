@@ -14,7 +14,6 @@ import static ui.CatalogoProductosPage.PRODUCT_PRICE_4;
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import org.openqa.selenium.WebDriver;
 

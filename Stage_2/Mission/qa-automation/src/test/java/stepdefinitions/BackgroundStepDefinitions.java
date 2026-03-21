@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Given.Givens;
 import tasks.NavegarACatalogoDeProductos;
 
 public class BackgroundStepDefinitions {
@@ -23,7 +24,10 @@ public class BackgroundStepDefinitions {
         actor.can(BrowseTheWeb.with(webDriver));
     }
 
-    @Given("que el usuario se encuentra en el catálogo de productos")
+    @Givens({
+            @Given("que el usuario se encuentra en el catálogo de productos"),
+            @Given("que el usuario se encuentra en el menú principal")
+    })
     public void elUsuarioSeEncuentraEnElCatalogoDeProductos() {
         actor.attemptsTo(
                 NavegarACatalogoDeProductos.ahora()
