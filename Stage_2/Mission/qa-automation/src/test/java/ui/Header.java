@@ -9,4 +9,6 @@ public class Header {
     public static final By LOCATOR_BURGER_MENU = AppiumBy.accessibilityId("View menu");
     public static final By LOCATOR_BURGER_MENU_OPTION_CATALOG = AppiumBy.xpath("//android.widget.TextView[@text='Catalog']");
     public static final By LOCATOR_BURGER_MENU_OPTION_WEBVIEW = AppiumBy.xpath("//android.widget.TextView[@text='WebView']");
+    public static final By LOCATOR_BURGER_MENU_OPTION_LOGIN = AppiumBy.xpath("//android.widget.TextView[@content-desc='Login Menu Item']");
+    public static final By LOCATOR_BURGER_MENU_OPTION_LOGOUT = AppiumBy.xpath("//android.widget.TextView[@content-desc='Logout Menu Item']");
 }

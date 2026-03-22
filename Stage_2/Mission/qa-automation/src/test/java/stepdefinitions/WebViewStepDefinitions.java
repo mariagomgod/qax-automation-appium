@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import static net.serenitybdd.screenplay.ensure.Ensure.that;
+import static ui.Header.LOCATOR_BURGER_MENU_OPTION_WEBVIEW;
 import static ui.WebviewPage.CONTENT_PAGE;
 import static ui.WebviewPage.WORKSHOP_TEXT;
 
@@ -16,7 +17,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import questions.Texto;
 import tasks.IngresarUrl;
-import tasks.NavegarAWebview;
+import tasks.SeleccionarOpcionMenuHamburguesa;
 
 public class WebViewStepDefinitions {
 
@@ -34,7 +35,7 @@ public class WebViewStepDefinitions {
     @When("accede al módulo WebView")
     public void accederAlModuloWebView() {
         actor.attemptsTo(
-                NavegarAWebview.ahora()
+                SeleccionarOpcionMenuHamburguesa.ahora(LOCATOR_BURGER_MENU_OPTION_WEBVIEW)
         );
     }
 
