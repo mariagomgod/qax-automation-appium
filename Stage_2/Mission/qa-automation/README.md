@@ -98,6 +98,8 @@ Scenario: Realizar una compra completa de productos
   Then la compra debe completarse exitosamente
   And debe mostrarse una confirmación de la orden
 ```
+### NOTAS QA:
+- No podemos agregar un segundo producto al carrito apliques el fitltro que apliques. Por algún motivo al intentar seleccionarlo la app se cierra automáticamente. Por tanto, solo se procede autmatizar el primero, el tercero, el cuarto y el quinto producto.
 
 ---
 ### 📂 Instrucciones y estructuración del proyecto
