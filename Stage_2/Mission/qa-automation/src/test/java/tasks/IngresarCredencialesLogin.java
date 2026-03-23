@@ -2,6 +2,7 @@ package tasks;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+import static ui.CheckoutPage.LOCATOR_FULL_NAME_INPUT;
 import static ui.LoginPage.LOCATOR_LOGIN_BTN;
 import static ui.LoginPage.LOCATOR_PASSWORD_INPUT;
 import static ui.LoginPage.LOCATOR_USERNAME_INPUT;

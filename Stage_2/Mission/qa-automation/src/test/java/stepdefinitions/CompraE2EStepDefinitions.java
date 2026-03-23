@@ -1,17 +1,21 @@
 package stepdefinitions;
 
+import static net.serenitybdd.screenplay.ensure.Ensure.that;
+import static ui.AboutPage.VERSION_APP_TEXT;
 import static ui.CatalogoProductosPage.LOCATOR_PRODUCT_1;
 import static ui.CatalogoProductosPage.LOCATOR_PRODUCT_3;
 import static ui.CatalogoProductosPage.LOCATOR_PRODUCT_4;
 import static ui.CatalogoProductosPage.LOCATOR_PRODUCT_5;
 import static ui.CatalogoProductosPage.LOCATOR_PRODUCT_6;
+import static ui.CheckoutPage.CHECKOUT_COMPLETE_TEXT;
+import static ui.CheckoutPage.ORDER_CONFIRMATION_DISPATCH_MESSAGE;
 import static ui.Header.LOCATOR_BURGER_MENU_OPTION_LOGIN;
 
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Iterate;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.actions.Browser;
+import net.serenitybdd.screenplay.questions.Visibility;
 
 import org.openqa.selenium.WebDriver;
 
@@ -22,8 +26,10 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import tasks.AgregarProductosAlCarrito;
+import tasks.Checkout;
 import tasks.Filtro;
 import tasks.IngresarCredencialesLogin;
+import tasks.Pago;
 import tasks.SeleccionarOpcionMenuHamburguesa;
 
 public class CompraE2EStepDefinitions {
@@ -91,25 +97,42 @@ public class CompraE2EStepDefinitions {
 
     @When("procede al checkout")
     public void checkout() {
+
+        String fullName = "Monica Ruiz";
+        String address = "Lacalle 2";
+        String city = "Malaga";
+        String zipCode = "23456";
+        String country = "Spain";
+
         actor.attemptsTo(
+                Checkout.ahora(fullName, address, city, zipCode, country)
         );
     }
 
     @When("realiza el pago correctamente")
     public void pagar() {
+
+        String fullName = "Monica Ruiz";
+        String cardNumber = "1111111111111111";
+        String expirationDate = "12/30";
+        String securityCode = "123";
+
         actor.attemptsTo(
+                Pago.ahora(fullName, cardNumber, expirationDate, securityCode)
         );
     }
 
     @Then("la compra debe completarse exitosamente")
     public void compraExitosa() {
         actor.attemptsTo(
+                that(Visibility.of(CHECKOUT_COMPLETE_TEXT)).isTrue()
         );
     }
 
     @Then("debe mostrarse una confirmación de la orden")
     public void confirmacionDeLaOrden() {
         actor.attemptsTo(
+                that(Visibility.of(ORDER_CONFIRMATION_DISPATCH_MESSAGE)).isTrue()
         );
     }
 }
